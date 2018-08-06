@@ -1,0 +1,17 @@
+<div style="text-align:center; border:1px; background-color:antiquewhite">
+    <h1> 
+      evaluation form
+    </h1>
+      <div>name: <input type="text" [(ngModel)]="name" (change)="changeName(name)"></div>
+      <div>age: <input type="text"></div>
+      <div>class name: <input type="text"></div>
+      <div *ngIf="role=='tutee' else whentutor">
+          <div>satisfication for tutor(1~10): <input type="number"></div>
+          <div>comment to tutor: <input type="text"></div>
+      </div>
+      <ng-template #whentutor>
+          <div>best tutee: <input type="text"></div>
+          <div>worst tutee: <input type="text"></div>
+      </ng-template>
+</div>
+  

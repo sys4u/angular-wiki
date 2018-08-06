@@ -1,0 +1,11 @@
+<div style="text-align:center; border:1px; background-color:pink">
+    <h1> 
+      Class Survey
+    </h1>
+    <input type="radio" [(ngModel)]="role" value="tutee">tutee
+    <input type="radio" [(ngModel)]="role" value="tutor">tutor
+ 
+  <app-person-info-form [role]="role"  (onChangeName)="changeName($event)"></app-person-info-form>
+
+  <p>{{name}}&nbsp;{{role}}님 <button>submit</button></p>
+</div>
