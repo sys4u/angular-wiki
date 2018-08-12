@@ -1,0 +1,14 @@
+<div class="input-group mb-3" style="text-align:center">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">ID</span>
+  </div>
+  <input type="text" class="form-control" placeholder="userId" aria-label="userId" aria-describedby="basic-addon1" [(ngModel)]="loginUser.id" >
+</div>
+<div class="input-group mb-3" style="text-align:center">
+ <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">PW</span>
+  </div>
+  <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1" [(ngModel)]="loginUser.pw" >
+ 
+</div>
+<button type="submit" (click)="login()" class="btn btn-primary">Login</button>
